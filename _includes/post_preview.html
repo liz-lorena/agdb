@@ -33,14 +33,14 @@
 		{% endfor %}
 
 
-		<!--<br>🎨 Art Style: {{ post.artstyle }} --><br>💻 Platform(s):			
+		<!--<br>🎨 Art Style: {{ post.artstyle }} --><br>🎮 Platform(s):			
 		{% for tags in post.platform %}
 		
 		[<a href="/agdb/platform/#{{ tags | downcase | remove: ' ' }}" title="See all games on {{ tags }}."> {{ tags }} </a>] 
 
 		{% endfor %} 
 
-		<br>⬆️ Developer: 
+		<br>⚙️ Developer: 
 
 		{% for tags in post.developer %}
 
