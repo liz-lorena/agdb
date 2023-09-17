@@ -5,11 +5,11 @@
 
 	<p class="excerpt">
 
-		📅 Initial Release: {{ post.date | date_to_long_string }}	<br>
+		📅 Released {{ post.date | date_to_long_string }}	<br>
 
 		{% if post.latestdate != nil %}
 
-		🆕 Latest Release: {{ post.latestdate | date_to_long_string }}	<br>
+		🆕 Latest Entry Released {{ post.latestdate | date_to_long_string }}	<br>
 
 		{% endif %}
 
