@@ -300,9 +300,11 @@ div.post {
 }
 
 div.post div.postimg {
-  margin: 0 auto;
+  /*margin: 0 auto;
   padding: 0 auto;
-  width: 80%;
+  width: 80%;*/
+	max-width:360px;
+	float:right;
 }
 
 div#navigation {
