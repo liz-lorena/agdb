@@ -21,7 +21,7 @@
 		[<a href="/agdb/species/#{{ tags | downcase | remove: ' ' }}" title="See all games with this animal species."> {{ tags }} </a>] 
 		{% endfor %}
 
-		<br>🎮 Play as animal? {{ post.playable }} <br>🔧 Has mods? {{ post.mods }} <br>
+		<!--<br>🎮 Play as animal? {{ post.playable }} <br>🔧 Has mods? {{ post.mods }} <br>-->
 
 		
 		📝 Genre(s): 
@@ -33,7 +33,7 @@
 		{% endfor %}
 
 
-		<br>🎨 Art Style: {{ post.artstyle }} <br>💻 Platform(s):			
+		<!--<br>🎨 Art Style: {{ post.artstyle }} --><br>💻 Platform(s):			
 		{% for tags in post.platform %}
 		
 		[<a href="/agdb/platform/#{{ tags | downcase | remove: ' ' }}" title="See all games on {{ tags }}."> {{ tags }} </a>] 
