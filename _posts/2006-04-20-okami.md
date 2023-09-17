@@ -8,7 +8,7 @@ playable: "Yes"
 mods: "No"
 type: realistic
 species: 
-- wolf
+- canid
 emoticon:
 - 🐺
 genre: 
