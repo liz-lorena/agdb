@@ -8,10 +8,9 @@ playable: "Yes"
 mods: "Yes"
 type: anthropomorphic
 species: 
-- rabbit
-- dog
-- cat
-- wolf
+- leporid
+- canid
+- felid
 - rodent
 emoticon: 
 - 🐰
