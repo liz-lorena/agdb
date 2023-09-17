@@ -1,0 +1,141 @@
+---
+layout: default
+title: By Genre | 
+---
+
+<h1>All Genres</h1>
+
+<h2 id="action">All Action Games</h2>
+{% for post in site.posts %}
+{% for tags in post.genre %}
+{% if tags == "action" %}
+{% include post_preview.html %}
+{% endif %}
+{% endfor %}
+{% endfor %}
+
+<h2 id="action-adventure">All Action-adventure Games</h2>
+{% for post in site.posts %}
+{% for tags in post.genre %}
+{% if tags == "action-adventure" %}
+{% include post_preview.html %}
+{% endif %}
+{% endfor %}
+{% endfor %}
+
+<h2 id="fighting">All Fighting Games</h2>
+{% for post in site.posts %}
+{% for tags in post.genre %}
+{% if tags == "fighting" %}
+{% include post_preview.html %}
+{% endif %}
+{% endfor %}
+{% endfor %}
+
+<h2 id="fps">All First-Person Shooter Games</h2>
+{% for post in site.posts %}
+{% for tags in post.genre %}
+{% if tags == "fps" %}
+{% include post_preview.html %}
+{% endif %}
+{% endfor %}
+{% endfor %}
+
+<h2 id="mmo">All MMO Games</h2>
+{% for post in site.posts %}
+{% for tags in post.genre %}
+{% if tags == "mmo" %}
+{% include post_preview.html %}
+{% endif %}
+{% endfor %}
+{% endfor %}
+
+<h2 id="mmorpg">All MMORPG Games</h2>
+{% for post in site.posts %}
+{% for tags in post.genre %}
+{% if tags == "mmorpg" %}
+{% include post_preview.html %}
+{% endif %}
+{% endfor %}
+{% endfor %}
+
+<h2 id="party">All Party Games</h2>
+{% for post in site.posts %}
+{% for tags in post.genre %}
+{% if tags == "party" %}
+{% include post_preview.html %}
+{% endif %}
+{% endfor %}
+{% endfor %}
+
+<h2 id="platformer">All Platformer Games</h2>
+{% for post in site.posts %}
+{% for tags in post.genre %}
+{% if tags == "platformer" %}
+{% include post_preview.html %}
+{% endif %}
+{% endfor %}
+{% endfor %}
+
+<h2 id="puzzle">All Puzzle Games</h2>
+{% for post in site.posts %}
+{% for tags in post.genre %}
+{% if tags == "puzzle" %}
+{% include post_preview.html %}
+{% endif %}
+{% endfor %}
+{% endfor %}
+
+<h2 id="rpg">All RPG Games</h2>
+{% for post in site.posts %}
+{% for tags in post.genre %}
+{% if tags == "rpg" %}
+{% include post_preview.html %}
+{% endif %}
+{% endfor %}
+{% endfor %}
+
+<h2 id="sandbox">All Sandbox Games</h2>
+{% for post in site.posts %}
+{% for tags in post.genre %}
+{% if tags == "sandbox" %}
+{% include post_preview.html %}
+{% endif %}
+{% endfor %}
+{% endfor %}
+
+<h2 id="simulation">All Simulation Games</h2>
+{% for post in site.posts %}
+{% for tags in post.genre %}
+{% if tags == "simulation" %}
+{% include post_preview.html %}
+{% endif %}
+{% endfor %}
+{% endfor %}
+
+<h2 id="social">All Social Games</h2>
+{% for post in site.posts %}
+{% for tags in post.genre %}
+{% if tags == "social" %}
+{% include post_preview.html %}
+{% endif %}
+{% endfor %}
+{% endfor %}
+
+<h2 id="survival">All Survival Games</h2>
+{% for post in site.posts %}
+{% for tags in post.genre %}
+{% if tags == "survival" %}
+{% include post_preview.html %}
+{% endif %}
+{% endfor %}
+{% endfor %}
+
+<h2 id="tps">All Third-Person Shooter Games</h2>
+{% for post in site.posts %}
+{% for tags in post.genre %}
+{% if tags == "tps" %}
+{% include post_preview.html %}
+{% endif %}
+{% endfor %}
+{% endfor %}

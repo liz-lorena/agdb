@@ -1,0 +1,87 @@
+<div class="post">
+	<div class="postimg"><img src="https://lizlorena.com/img/animal-games-database/{{ post.img }}" class="img-fluid" alt="{{ post.title }}"></div>
+	<br><br>
+	<h3>{{ post.title }} {% for tags in post.emoticon %}{{ tags }} {% endfor %}</h3>
+
+	<p class="excerpt">
+
+		📅 Initial Release: {{ post.date | date_to_long_string }}	<br>
+
+		{% if post.latestdate != nil %}
+
+		🆕 Latest Release: {{ post.latestdate | date_to_long_string }}	<br>
+
+		{% endif %}
+
+		✨ Type: <a href="/type/#{{ post.type }}" title="See all games with characters of this type.">{{ post.type }}</a> 
+
+		<br>🦋 Species: 
+
+		{% for tags in post.species %}
+		[<a href="/species/#{{ tags | downcase | remove: ' ' }}" title="See all games with this animal species."> {{ tags }} </a>] 
+		{% endfor %}
+
+		<br>🎮 Play as animal? {{ post.playable }} <br>🔧 Has mods? {{ post.mods }} <br>
+
+
+
+		📝 Genre(s): 
+
+		{% for tags in post.genre %}
+
+		[ <a href="/genre/#{{ tags }}" title="See all {{ tags }} games.">{{ tags }}</a> ]  
+
+		{% endfor %}
+
+
+		<br>🎨 Art Style: {{ post.artstyle }} <br>💻 Platform(s):			
+		{% for tags in post.platform %}
+		
+		[<a href="/platform/#{{ tags | downcase | remove: ' ' }}" title="See all games on {{ tags }}."> {{ tags }} </a>] 
+
+		{% endfor %} 
+
+		<br>⬆️ Developer: 
+
+		{% for tags in post.developer %}
+
+		[ <a href="https://www.google.com/search?q='{{ tags }}'" target="_blank" title="Learn more about {{ tags }}.">{{ tags }}</a> ]  
+
+		{% endfor %}
+
+		<br>⬇️ Publisher(s): 
+		{% for tags in post.publisher %}
+		
+		[ {{ tags }} ] 
+
+		{% endfor %} 
+
+		{% if post.series != nil %} <br>📚 Games in Series: 
+
+		{% for tags in post.series %}
+		[ <a href="https://www.google.com/search?q='{{ tags }}'" target="_blank" title="Find {{ tags }}.">{{ tags }}</a> ] 
+		{% endfor %}
+
+		{% endif %} 
+
+		{% if post.suggester != nil %}
+		<br>❤️ Suggested by <a href="{{ post.suggesterurl }}" target="_blank" title="The awesome {{ post.suggester }} suggested this game!">{{ post.suggester }}</a>
+		{% endif %}
+		<br><br>
+		
+		📖 Summary: {{ post.excerpt }}<br><br>
+		<a href="{{ post.link }}" target="_blank" title="Read more about {{ post.title }} on Wikipedia.org.">ℹ️ More information</a> </p>
+		
+		🔗 <input type="text" value="{{ site.url }}/#{{ post.title | downcase | remove: ' ' }}" id="myInput {{ post.title }}">
+		<!--<button onclick="myFunction()" title="Copy link to {{ post.title }}.">Copy</button>-->
+	
+</div>
+
+<!--<script>
+function myFunction() {
+  var copyText = document.getElementById("myInput {{ post.title }}");
+  copyText.select();
+  document.execCommand("copy");
+  alert("Copied the text: " + copyText.value);
+}
+</script>-->

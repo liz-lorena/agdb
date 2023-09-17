@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-3391448313591639",
+          enable_page_level_ads: true
+     });
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123712244-10"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-123712244-10');
+</script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="{{ site.description }}">
+  <meta name="keywords" content="animals, games, database, video games, anthropomorphic, zoomorphic, animals in games">
+  <meta name="author" content="{{ site.author_name }}">
+  <meta name="twitter" content="{{ site.twitter_username }}">
+  <meta name="github" content="{{ site.github_username }}">
+
+  <title>{{ page.title }} {{ site.title }}</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet"> 
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+
+  <script src="//static.tumblr.com/ihhnoee/12Cotb0p2/jquery.style-my-tooltips.js"></script>
+<!--
+  <script>
+    (function($){
+      $(document).ready(function(){
+        $("a[title]").style_my_tooltips({
+          tip_follows_cursor:false,
+          tip_delay_time:100,
+          tip_fade_speed:300,
+          attribute:"title"
+        });
+      });
+    })(jQuery);
+  </script>
+
+  <script>
+    $(document).ready(function(){
+
+      $("a i.fa-times").click(function(){
+        $("div.modal2").removeClass("show");
+      });
+
+      $("a#creds").click(function(){
+        $("div.modal2").addClass("show");
+      });
+    });
+  </script>-->
+  
+  <link href="/cssreset.css" rel="stylesheet">
+  <link href="/index.css" rel="stylesheet">
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.png">
+
+</head>
+<body>
+
+    <div id="main-area">
+
+      <div id="navigation">
+
+        <div class="title"><h1>🐾 Animal Games Database</h1></div>
+
+        <div class="menu">{% include mainmenu.html %}</div>
+
+        <form method="get" action="https://www.google.com/search" target="_blank">
+        <input type="hidden" name="sitesearch" value="agdb.smugcroc.com" />
+        <input type="text" name="q" maxlength="255" placeholder="Search with Google" />
+        </form>
+
+        <div class="archives">
+        {% include widget_archives.html %}
+        </div>
+
+        <div class="credits">
+        {% include credits.html %}
+        </div>
+
+      </div>
+      <div id="content">
+        
+          {{content}}
+        
+      </div>
+      
+    </div>
+
+  <script src="/index.js"></script>
+
+</body>
+</html>

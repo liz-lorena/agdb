@@ -1,0 +1,114 @@
+---
+layout: default
+title: By Species | 
+---
+
+<h1>All Species</h1>
+
+<h2 id="bigcat">All Games with Big Cats</h2>
+{% for post in site.posts %}
+{% for tags in post.species %}
+{% if tags == "big cat" %}
+{% include post_preview.html %}
+{% endif %}
+{% endfor %}
+{% endfor %}
+
+<h2 id="bird">All Games with Birds</h2>
+{% for post in site.posts %}
+{% for tags in post.species %}
+{% if tags == "bird" %}
+{% include post_preview.html %}
+{% endif %}
+{% endfor %}
+{% endfor %}
+
+<h2 id="cat">All Games with Cats</h2>
+{% for post in site.posts %}
+{% for tags in post.species %}
+{% if tags == "cat" %}
+{% include post_preview.html %}
+{% endif %}
+{% endfor %}
+{% endfor %}
+
+<h2 id="deer">All Games with Deer</h2>
+{% for post in site.posts %}
+{% for tags in post.species %}
+{% if tags == "deer" %}
+{% include post_preview.html %}
+{% endif %}
+{% endfor %}
+{% endfor %}
+
+<h2 id="dog">All Games with Dogs</h2>
+{% for post in site.posts %}
+{% for tags in post.species %}
+{% if tags == "dog" %}
+{% include post_preview.html %}
+{% endif %}
+{% endfor %}
+{% endfor %}
+
+<h2 id="fox">All Games with Foxes</h2>
+{% for post in site.posts %}
+{% for tags in post.species %}
+{% if tags == "fox" %}
+{% include post_preview.html %}
+{% endif %}
+{% endfor %}
+{% endfor %}
+
+<h2 id="multiple">All Games with Multiple Species</h2>
+{% for post in site.posts %}
+{% for tags in post.species %}
+{% if tags == "multiple" %}
+{% include post_preview.html %}
+{% endif %}
+{% endfor %}
+{% endfor %}
+
+<h2 id="other">All Games with Other Species</h2>
+{% for post in site.posts %}
+{% for tags in post.species %}
+{% if tags == "other" %}
+{% include post_preview.html %}
+{% endif %}
+{% endfor %}
+{% endfor %}
+
+<h2 id="rabbit">All Games with Rabbits</h2>
+{% for post in site.posts %}
+{% for tags in post.species %}
+{% if tags == "rabbit" %}
+{% include post_preview.html %}
+{% endif %}
+{% endfor %}
+{% endfor %}
+
+<h2 id="reptile">All Games with Reptiles</h2>
+{% for post in site.posts %}
+{% for tags in post.species %}
+{% if tags == "reptile" %}
+{% include post_preview.html %}
+{% endif %}
+{% endfor %}
+{% endfor %}
+
+<h2 id="rodent">All Games with Rodents</h2>
+{% for post in site.posts %}
+{% for tags in post.species %}
+{% if tags == "rodent" %}
+{% include post_preview.html %}
+{% endif %}
+{% endfor %}
+{% endfor %}
+
+<h2 id="wolf">All Games with Wolves</h2>
+{% for post in site.posts %}
+{% for tags in post.species %}
+{% if tags == "wolf" %}
+{% include post_preview.html %}
+{% endif %}
+{% endfor %}
+{% endfor %}

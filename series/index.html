@@ -1,0 +1,45 @@
+---
+layout: default
+title: By Series | 
+---
+
+<h1>All Series</h1>
+
+<div class="post">
+<p>Here are all the games that have sequels.</p>
+</div>
+
+<h2 id="animalcrossing">All Games in the Animal Crossing Series</h2>
+{% for post in site.posts %}
+{% if post.series == "Animal Crossing" %}
+{% include post_preview.html %}
+{% endif %}
+{% endfor %}
+
+<h2 id="lugaru">All Games in the Lugaru Series</h2>
+{% for post in site.posts %}
+{% if post.series == "Lugaru" %}
+{% include post_preview.html %}
+{% endif %}
+{% endfor %}
+
+<h2 id="okami">All Games in the Okami Series</h2>
+{% for post in site.posts %}
+{% if post.series == "Okami" %}
+{% include post_preview.html %}
+{% endif %}
+{% endfor %}
+
+<h2 id="shelter">All Games in the Shelter Series</h2>
+{% for post in site.posts %}
+{% if post.series == "Shelter" %}
+{% include post_preview.html %}
+{% endif %}
+{% endfor %}
+
+<h2 id="theelderscrolls">All Games in the Elder Scrolls Series</h2>
+{% for post in site.posts %}
+{% if post.series == "The Elder Scrolls" %}
+{% include post_preview.html %}
+{% endif %}
+{% endfor %}
