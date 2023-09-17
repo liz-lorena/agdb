@@ -9,7 +9,6 @@ mods: "No"
 type: anthropomorphc
 species: 
 - snake
-- reptile
 emoticon:
 - 🐍
 genre: 
