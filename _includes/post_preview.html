@@ -24,7 +24,7 @@
 		<!--<br>🎮 Play as animal? {{ post.playable }} <br>🔧 Has mods? {{ post.mods }} -->
 
 		
-		<br>📝 Genre(s): 
+		<br>📚 Genre(s): 
 
 		{% for tags in post.genre %}
 
@@ -64,7 +64,7 @@
 		{% endif %} 
 
 		{% if post.suggester != nil %}
-		<br>❤️ Suggested by <a href="{{ post.suggesterurl }}" target="_blank" title="The awesome {{ post.suggester }} suggested this game!">{{ post.suggester }}</a>
+		<br>📝 Suggested by <a href="{{ post.suggesterurl }}" target="_blank" title="{{ post.suggester }} suggested this game!">{{ post.suggester }}</a>
 		{% endif %}
 		<br><br>
 		
