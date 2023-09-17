@@ -8,8 +8,8 @@ playable: "Yes"
 mods: "No"
 type: anthropomorphic
 species: 
-- dog
-- cat
+- canid
+- felid
 emoticon: 
 - 🐶
 - 🐱
