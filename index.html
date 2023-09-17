@@ -1,0 +1,15 @@
+---
+layout: default
+title:  
+excerpt: "All games sorted by latest release."
+---
+
+<h1>🐾 All Video Games Featuring Animals</h1>
+
+{% for post in site.posts %}
+
+<div id="{{ post.title | downcase | remove: ' ' }}">
+{% include post_preview.html %}
+</div>
+
+{% endfor %}

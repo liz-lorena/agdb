@@ -1,0 +1,325 @@
+::-moz-selection { /* Code for Firefox */
+  color: white;
+  background: pink;
+}
+
+::selection {
+  color: white;
+  background: pink;
+}
+
+/*Mobile*/
+body {  
+  background-color: #110b54;
+  background-position: top;
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: bold;
+}
+
+div#content a, div#navigation a {
+  color: green;
+  transition: all .5s;
+}
+
+div#content a:hover, div#navigation a:hover {
+  text-decoration: none;
+  color: darkgreen;
+  font-size: 15pt;
+}
+
+h1, h2, h3 {
+  color: white;
+}
+
+div.post h3 {
+  color: #110b54;
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 22pt;
+}
+
+h2 {
+  font-size: 20pt;
+  margin-bottom: 50px;
+}
+
+h3 {
+  font-size: 15pt;
+  line-height: 25px;
+}
+
+div.title h1 {
+  color: #110b54;
+  font-size: 22pt;
+}
+
+p {
+  font-size: 12pt;
+  font-family: sans-serif;
+  line-height: 25px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  color: #110b54;
+}
+
+div#content p {
+  color: white;
+}
+
+div#navigation {
+	width: 100%;
+	padding: 20px 0px 0px 0px;
+	float: left;
+  background-color: white;
+  border: 5px solid pink;
+}
+
+div#navigation div.menu ul li a {
+  font-size: 15pt;
+	float: left;
+  width: 33.33%;
+  padding: 14px;
+  text-align: center;
+  background-color: #110b54; 
+  font-family: sans-serif;
+  color: white;
+  border-bottom: 5px solid white;
+  transition: all .5s;
+}
+
+div#navigation div.menu ul li a:hover {
+  text-decoration: none;
+  color: #110b54;
+  background-color: white;
+}
+
+div.menu {
+  /*margin-bottom: 30px;
+  margin-top: 30px;*/
+  height: 40px;  
+  width: 100%;
+}
+
+div#content {
+	width: 100%;
+  padding: 20px 0px 0px 0px;
+	float: right;
+  border: 5px solid white;
+}
+
+div#content h1, div.title h1 {
+  margin-bottom: 80px;
+}
+
+div.title h1 {
+  margin-bottom: 50px;
+}
+
+div.post, div.archives {
+	padding: 30px;
+	margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 100px;
+  border-radius: 20px;
+  background-color: white;
+  background-position: center;
+}
+
+div.post {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 10px;
+}
+
+div.post {
+  border: 5px solid pink;
+}
+
+div.post div.postimg {
+  margin: 0 auto;
+  padding: 0 auto;
+  width: 100%;
+}
+
+div.post img {
+  width: 100%;
+  border-radius: 20px; 
+  border: 5px solid pink;
+  
+}
+
+div#content div.post p.excerpt, div#content div.post h3 {
+  margin-bottom: 30px;
+}
+
+div.post input {
+  width: 85%;
+  font-size: 12pt;
+  font-family: sans-serif;
+  color: #110b54;
+  border: none;
+}
+
+div.post button {
+  font-size: 15pt;
+  width: 100px;
+  padding: 10px;
+  text-align: center;
+  background-color: #110b54; 
+  font-family: sans-serif;
+  border: none;
+  color: white;
+  transition: all .5s;
+}
+
+div.post button:hover {
+  border: none;
+  text-decoration: none;
+  color: #110b54;
+  background-color: white;
+}
+
+div.archives {
+  border-radius: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  background-color: pink;
+}
+
+div.title {
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  padding: 0px;
+}
+
+div#content div.post p {
+  color: #110b54;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+/*Select*/
+select {
+  width: 100%;
+  color: #110b54;
+  border: white;
+  padding: 5px;
+  font-size: 12pt;
+  font-family: sans-serif;
+}
+
+select option {
+  color: #110b54;
+  font-size: 12pt;
+  font-family: sans-serif;
+}
+
+/*Modal Box*/
+div.modal2 {
+   display: none; /* Hidden by default */
+   position: fixed; /* Stay in place */
+   z-index: 3; /* Sit on top */
+   left: 0;
+   top: 0;
+   width: 100%; /* Full width */
+   height: 100%; /* Full height */
+   overflow: auto; /* Enable scroll if needed */
+   background-color: rgb(0,0,0); /* Fallback color */
+   background-color: rgba(0,0,0,0.4); /* #110b54 w/ opacity */
+ }
+
+div.login2 {
+  background-color: whitesmoke;
+  box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin: 20% auto;
+  padding: 0 auto;
+  overflow: auto; /* Enable scroll if needed */
+}
+
+div.login2 ul li {
+	
+}
+
+a i.fa-times {
+  float: right;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+div.modal2 {
+	display: none;
+}
+
+div.modal2.show {
+	display: block;
+}
+
+/*Search Bar*/
+
+form {
+  width: 100%;
+  border-bottom: 5px solid white;
+}
+
+form input {
+  font-family: sans-serif;
+  font-size: 12pt;
+  height: 40px;
+  border: 0px;
+  width: 100%;
+  color: #110b54;
+}
+
+/*Desktop*/
+
+@media (min-width: 768px) {	
+
+div#content h1, div.title h1 {
+  margin-bottom: 80px;
+}
+
+div.post {
+  padding: 30px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 100px;
+  border-radius: 20px;
+  background-color: white;
+  background-position: center;
+}
+
+div.post div.postimg {
+  margin: 0 auto;
+  padding: 0 auto;
+  width: 80%;
+}
+
+div#navigation {
+  width: 30%;
+  height: 100vh;
+  padding: 50px;
+  float: left;
+  position: fixed;
+  background-color: white;
+  border: 5px solid pink;
+}
+
+div#content {
+  width: 70%;
+  padding: 50px;
+  float: right;
+  border: 5px solid white;
+}
+
+}
