@@ -6,7 +6,7 @@ title: By Type |
 <h1>Filter by Type</h1>
 
 <div class="post">
-<p>There are three "types" on this list: anthropomorphic, zoomorphic, and realistic. Anthropomorphism means that prominent animal characters in the game are mostly animal with some human features. Zoomorphism means that prominent animal characters in the game are mostly human with some animal features. Realism means that prominent animal characters in the game have no human traits.</p>
+<p>There are two "types" on this list: anthropomorphic and realistic. Anthropomorphism means that prominent animal characters in the game are mostly animal with some human features. Realism means that prominent animal characters in the game have no human traits.</p>
 </div>
 
 <h2 id="anthropomorphic">All Games with Anthropomorphic Characters</h2>
@@ -19,13 +19,6 @@ title: By Type |
 <h2 id="realistic">All Games with Realistic Animals</h2>
 {% for post in site.posts %}
 {% if post.type == "realistic" %}
-{% include post_preview.html %}
-{% endif %}
-{% endfor %}
-
-<h2 id="zoomorphic">All Games with Zoomorphic Characters</h2>
-{% for post in site.posts %}
-{% if post.type == "zoomorphic" %}
 {% include post_preview.html %}
 {% endif %}
 {% endfor %}
