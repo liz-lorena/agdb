@@ -44,7 +44,11 @@
 
 		{% for tags in post.developer %}
 
+		{% if post.buy != nil %}
+		[ <a href="{{ post.devlink }}" target="_blank" title="Learn more about {{ tags }}.">{{ tags }}</a> ]  
+		{% else %}
 		[ <a href="https://www.google.com/search?q='{{ tags }}'" target="_blank" title="Learn more about {{ tags }}.">{{ tags }}</a> ]  
+		{% endif %}
 
 		{% endfor %}
                 <!--
