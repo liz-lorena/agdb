@@ -69,9 +69,9 @@
 		<br><br>
 		
 		📖 Summary: {{ post.excerpt }}<br><br>
-		<a href="{{ post.link }}" target="_blank" title="Read more about {{ post.title }} on Wikipedia.org.">ℹ️ Learn More</a> </p>
+		<a href="{{ post.link }}" target="_blank" title="Read more about {{ post.title }} on Wikipedia.org.">ℹ️ Learn More</a> <br><br>
 		
-		🔗 {{ site.url }}/agdb/#{{ post.title | downcase | remove: ' ' }}
+		🔗 {{ site.url }}/agdb/#{{ post.title | downcase | remove: ' ' }}</p>
 	        <!--<input type="text" value="{{ site.url }}/agdb/#{{ post.title | downcase | remove: ' ' }}" id="{{ post.title }}">-->
 	        <!--<button onclick="myFunction()" title="Copy link to {{ post.title }}.">Copy</button>-->
 </div>
