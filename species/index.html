@@ -5,10 +5,10 @@ title: By Species |
 
 <h1>All Species</h1>
 
-<h2 id="bigcat">All Games with Big Cats</h2>
+<h2 id="bigcat">All Games with Felids (Cats)</h2>
 {% for post in site.posts %}
 {% for tags in post.species %}
-{% if tags == "big cat" %}
+{% if tags == "felid" %}
 {% include post_preview.html %}
 {% endif %}
 {% endfor %}
@@ -23,15 +23,6 @@ title: By Species |
 {% endfor %}
 {% endfor %}
 
-<h2 id="cat">All Games with Cats</h2>
-{% for post in site.posts %}
-{% for tags in post.species %}
-{% if tags == "cat" %}
-{% include post_preview.html %}
-{% endif %}
-{% endfor %}
-{% endfor %}
-
 <h2 id="deer">All Games with Deer</h2>
 {% for post in site.posts %}
 {% for tags in post.species %}
@@ -41,19 +32,10 @@ title: By Species |
 {% endfor %}
 {% endfor %}
 
-<h2 id="dog">All Games with Dogs</h2>
+<h2 id="dog">All Games with Canids (Dogs, Wolves, and Foxes)</h2>
 {% for post in site.posts %}
 {% for tags in post.species %}
-{% if tags == "dog" %}
-{% include post_preview.html %}
-{% endif %}
-{% endfor %}
-{% endfor %}
-
-<h2 id="fox">All Games with Foxes</h2>
-{% for post in site.posts %}
-{% for tags in post.species %}
-{% if tags == "fox" %}
+{% if tags == "canid" %}
 {% include post_preview.html %}
 {% endif %}
 {% endfor %}
@@ -99,15 +81,6 @@ title: By Species |
 {% for post in site.posts %}
 {% for tags in post.species %}
 {% if tags == "rodent" %}
-{% include post_preview.html %}
-{% endif %}
-{% endfor %}
-{% endfor %}
-
-<h2 id="wolf">All Games with Wolves</h2>
-{% for post in site.posts %}
-{% for tags in post.species %}
-{% if tags == "wolf" %}
 {% include post_preview.html %}
 {% endif %}
 {% endfor %}
