@@ -76,9 +76,10 @@
 		<a href="{{ post.link }}" target="_blank" title="Read more about {{ post.title }} on Wikipedia.org.">ℹ️ Learn More</a> 
 		
 		{% if post.buy != nil %}
-		<a href="{{ post.buy }}" target="_blank" title="Get {{ post.title }}.">🛒 Get the Game</a> <br><br>
+		<a href="{{ post.buy }}" target="_blank" title="Get {{ post.title }}.">🛒 Get the Game</a>
 		{% endif %}
-		
+
+		<br><br>
 		🔗 {{ site.url }}/agdb/#{{ post.title | downcase | remove: ' ' }}</p>
 	        <!--<input type="text" value="{{ site.url }}/agdb/#{{ post.title | downcase | remove: ' ' }}" id="{{ post.title }}">-->
 	        <!--<button onclick="myFunction()" title="Copy link to {{ post.title }}.">Copy</button>-->
